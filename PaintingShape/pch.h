@@ -7,6 +7,8 @@
 #ifndef PCH_H
 #define PCH_H
 
+#include <iostream>
+#include "Application.h"
 // ajouter les en-têtes à précompiler ici
 
 #endif //PCH_H
