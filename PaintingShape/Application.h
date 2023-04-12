@@ -6,12 +6,14 @@ public:
 	void Start();
 	void Stop();
 	void Rotate(double angle);
+	bool IsInMove() { return inMove; }
+	double GetAngle() { return angle; }
+	
+	// Do not use or modify below functions
 	bool UpdateRotate() { return updateRotation; }
 	bool UpdateMove() { return updateMove; }
 	void ClearRotate() { updateRotation = false; }
 	void ClearMove() { updateMove = false; }
-	bool IsInMove() { return inMove; }
-	double GetAngle() { return angle; }
 	bool updatePrint = false;
 	bool printEnable = false;
 
