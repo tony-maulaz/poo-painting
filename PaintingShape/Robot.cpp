@@ -1,35 +1,37 @@
 #include <string>
 #include "pch.h"
 #include "Application.h"
+#include "Helper.h"
 
 using namespace std;
 
 void Robot::Start() {
-	std::cout << "Robot Start" << std::endl;
+	printBlue("Robot start", true);
 	updateMove = true;
 	inMove = true;
 }
 
 void Robot::Stop() {
-	std::cout << "Robot Stop" << std::endl;
+	printBlue("Robot stop", true);
 	updateMove = true;
 	inMove = false;
 }
 
 void Robot::Rotate(double angle) {
-	std::cout << "Robot rotate : " << (int)angle << std::endl;
+	string txt = "Robot rotate : " + to_string((int)angle);
+	printBlue(txt, true);
 	updateRotation = true;
 	this->angle = angle;
 }
 
 void Robot::Print(bool enable) {
 
-	std::cout << "Robot print : ";
+	printBlue("Robot print ", false);
 
 	if (enable)
-		std::cout << "enable" << std::endl;
+		printBlue("enable", true);
 	else
-		std::cout << "disable" << std::endl;
+		printBlue("disable", true);
 
 	updatePrint = true;
 	printEnable = enable;

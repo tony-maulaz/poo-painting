@@ -16,6 +16,8 @@ int main(array<System::String ^> ^args)
 
 	array<Byte>^ sendBytes;
 
+	appl.Config();
+	
 	while ( appl.IsInProgress() ) {
 
 		appl.Execute();

@@ -1,12 +1,16 @@
 #include <string>
 #include "pch.h"
-#include "Application.h"
+#include "Helper.h"
 
 using namespace std;
 
-
 Application::Application() {
 	inProgress = true; 
+}
+
+void Application::Config() {
+	// Set list of shapes
+	printGreen("Configuration de l'application", true);
 }
 
 // call every 100 ms

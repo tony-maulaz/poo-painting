@@ -28,6 +28,8 @@ class Application {
 public:
 	Application();
 
+	void Config();
+
 	void Execute();
 	bool IsInProgress() { return inProgress; }
 

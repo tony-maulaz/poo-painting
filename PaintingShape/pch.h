@@ -8,6 +8,7 @@
 #define PCH_H
 
 #include <iostream>
+#include <string>
 #include "Application.h"
 // ajouter les en-têtes à précompiler ici
 
