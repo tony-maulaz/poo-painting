@@ -1,6 +1,6 @@
-#include <string>
 #include "pch.h"
 #include "Helper.h"
+#include "Application.h"
 
 using namespace std;
 
@@ -16,6 +16,8 @@ void Application::Config() {
 // call every 100 ms
 void Application::Execute() {
 	
+
+
 	static int cpt = 0;
 
 	if (cpt == 1)

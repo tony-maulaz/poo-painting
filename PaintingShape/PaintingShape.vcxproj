@@ -128,13 +128,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="Instruction.h" />
     <ClInclude Include="Helper.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Robot.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Instruction.cpp" />
     <ClCompile Include="Helper.cpp" />
     <ClCompile Include="PaintingShape.cpp" />
     <ClCompile Include="pch.cpp">
