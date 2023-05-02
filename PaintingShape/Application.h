@@ -1,6 +1,10 @@
 #pragma once
-#include "Robot.h"
+#include <string>
+#include <iostream>
+#include <queue>
+#include <memory>
 #include "Instruction.h"
+#include "Robot.h"
 
 class Application {
 public:
@@ -12,7 +16,7 @@ public:
 	bool IsInProgress() { return inProgress; }
 
 	Robot robot;
-	//InstructionManager im{ robot };
+	InstructionManager im{ robot };
 
 private:
 	bool inProgress;

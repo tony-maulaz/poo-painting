@@ -10,13 +10,23 @@ Application::Application() {
 
 void Application::Config() {
 	// Set list of shapes
-	printGreen("Configuration de l'application", true);
+	printGreen("Configuration de l'application", true);	
+	im.createInstruction();
+	im.start();
 }
 
 // call every 100 ms
 void Application::Execute() {
 	
+	// State machine example
+	im.executeStateMachine();
+	
+	if (!im.isInProgress()) {
+		printGreen("Application terminee", true);
+		inProgress = false;
+	}
 
+	return;
 
 	static int cpt = 0;
 
